@@ -1,0 +1,40 @@
+# Anchor
+.anchor
+target/
+**/*.rs.bk
+test-ledger/
+
+# IDL
+*.so
+
+# Keys
+*.json
+!package.json
+!tsconfig.json
+
+# Build artifacts
+/target/
+**/*.rs.bk
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# Testing
+.test-ledger/
+
+# Local env files
+.env
+.env.local

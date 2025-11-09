@@ -1,0 +1,25 @@
+[package]
+name = "nullifier"
+version = "0.1.0"
+description = "Privacy-preserving transactions on Solana using zkSNARKs"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "nullifier"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.30.1"
+sha2 = "0.10"
+light-poseidon = "0.2.0"
+ark-bn254 = "0.4.0"
+ark-ff = "0.4.0"
+solana-program = "1.18.0"
+once_cell = "1.19"
